@@ -9,7 +9,7 @@ Olá seja bem vindo ao meu desafio back-end para o UOL utilizando java e springb
 
 # Descrição
 
-O objetivo deste desafio é construir uma API REST que permite realizar operações básicas de envio de email para usuarios,tendo como objetivo ser um serviço externo da aplicação.
+O objetivo deste desafio é construir uma API REST que permite realizar operações de cadastro de possiveis cliente escolhendo o seu tipo time de personagens preferidos por exemplos AVENGERS ou JUSTICE LEAGUE.
 
 ## Pré-requisitos
 
@@ -18,7 +18,6 @@ Antes de começar, certifique-se de que você tem os seguintes pré-requisitos i
     Java 8 ou superior
     Spring Boot
     MySQL
-    AWS SDK - credenciais
 
 # Configuração do Banco de Dados
 
@@ -28,7 +27,7 @@ Certifique-se de configurar o banco de dados MySQL corretamente. Você pode usar
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/uber
+    url: jdbc:mysql://localhost:3306/uol
     username: seu_usuario
     password: sua_senha
 
