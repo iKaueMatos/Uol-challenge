@@ -1,7 +1,11 @@
 package com.uolchallenge.uol.Application.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -25,5 +29,11 @@ public class PlayerController {
 
     public ResponseEntity<PlayerEntity> createPlayer(@RequestBody @Valid PlayerDto playerDate) {
         PlayerEntity newPlayer = playerService.createPlayer(playerDate);
+        return ResponseEntity.status(HttpStatus.CREATED).body(newPlayer);
+    }
+
+    @GetMapping
+    public ResponseEntity<List<PlayerEntity>> getAllPlayers(){
+        return new ResponseEntity<>(playerService.getAllPlayers(), HttpStatus.OK);
     }
 }
