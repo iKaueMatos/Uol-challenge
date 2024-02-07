@@ -50,6 +50,3 @@ Link do repositório:https://github.com/iKaueMatos/uol-challenge
 
 Link do Linkedin:https://www.linkedin.com/in/ikauematos/
 
-# Challenge Uber
-
-link:https://github.com/uber-archive/coding-challenge-tools/blob/master/coding_challenge.md
